@@ -6,11 +6,11 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 22:44:08 by root              #+#    #+#             */
-/*   Updated: 2023/08/24 23:00:40 by root             ###   ########.fr       */
+/*   Updated: 2023/08/25 19:04:29 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void    *ft_memcpy(void *dest, const void *src, size_t n)
 {

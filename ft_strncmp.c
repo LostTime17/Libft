@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/24 21:24:41 by root              #+#    #+#             */
-/*   Updated: 2023/08/25 19:04:47 by root             ###   ########.fr       */
+/*   Created: 2023/08/25 20:28:23 by root              #+#    #+#             */
+/*   Updated: 2023/08/25 20:36:12 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-    return (c >= '0' && c<= '9');
+    while ((*s1 || *s2) && n)
+    {
+        if (*s1 != *s2)
+            return ((unsigned char)*s1 - (unsigned char)*s2);
+        if (!n)
+            break;
+        s1++;
+        s2++;
+        n--;
+    }
+    return (0);
 }

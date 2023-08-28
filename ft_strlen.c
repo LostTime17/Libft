@@ -6,11 +6,11 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 21:45:56 by root              #+#    #+#             */
-/*   Updated: 2023/08/24 21:52:07 by root             ###   ########.fr       */
+/*   Updated: 2023/08/25 19:04:13 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t ft_strlen(const char *s)
 {

@@ -6,11 +6,11 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 22:39:46 by root              #+#    #+#             */
-/*   Updated: 2023/08/24 22:43:49 by root             ###   ########.fr       */
+/*   Updated: 2023/08/25 19:05:12 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <strings.h>
+#include "libft.h"
 
 void    ft_bzero(void *s, size_t n)
 {
