@@ -6,13 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 21:24:41 by root              #+#    #+#             */
-/*   Updated: 2023/08/25 19:04:47 by root             ###   ########.fr       */
+/*   Updated: 2023/08/30 18:43:32 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    return (c >= '0' && c<= '9');
+	return (c >= '0' && c <= '9');
 }

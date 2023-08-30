@@ -6,13 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 21:31:54 by root              #+#    #+#             */
-/*   Updated: 2023/08/25 19:04:54 by root             ###   ########.fr       */
+/*   Updated: 2023/08/30 18:43:33 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    return (c >= 0 && c <= 127);
+	return (c >= 0 && c <= 127);
 }

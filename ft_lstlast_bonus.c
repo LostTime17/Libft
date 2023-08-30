@@ -6,19 +6,19 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 17:02:17 by root              #+#    #+#             */
-/*   Updated: 2023/08/30 17:02:19 by root             ###   ########.fr       */
+/*   Updated: 2023/08/30 18:43:24 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list  *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
-    if (!lst)
-        return (NULL);
-    while (lst->next)
-    {
-        lst = lst->next;
-    }
-    return (lst);
+	if (!lst)
+		return (NULL);
+	while (lst->next)
+	{
+		lst = lst->next;
+	}
+	return (lst);
 }
