@@ -1,30 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/28 13:30:54 by root              #+#    #+#             */
-/*   Updated: 2023/08/28 14:12:12 by root             ###   ########.fr       */
+/*   Created: 2023/08/28 14:38:22 by root              #+#    #+#             */
+/*   Updated: 2023/08/28 16:40:22 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strdup(const char *s)
+char    *ft_strtrim(const char *s1, const char *set)
 {
-    char  *dup_s;
-    char  *start;
+    const char  *start;
+    const char  *end;
+    char        *trimmed;
     size_t          len;
 
-    len = ft_strlen(s);
-    dup_s = malloc(len + 1);
-    if (!dup_s)
+    while (*s1 && ft_strchr(set, *s1))
+        s1++;
+    start = s1;
+    end = s1 + ft_strlen(s1) - 1;
+    while (end > start && ft_strchr(set, *end))
+        end--;
+    len = end - start + 1;
+    trimmed = malloc(len + 1);
+    if (!trimmed)
         return (0);
-    start = dup_s;
-    while (*s)
-        *dup_s++ = *s++;
-    *dup_s = '\0';
-    return (start);
+    ft_strlcpy(trimmed, start, len + 1);
+    return (trimmed);
 }
