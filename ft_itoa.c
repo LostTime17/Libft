@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 17:25:53 by root              #+#    #+#             */
-/*   Updated: 2023/08/30 18:43:30 by root             ###   ########.fr       */
+/*   Updated: 2023/09/01 23:24:42 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,8 @@ static int	ft_intlen(int n)
 	return (len);
 }
 
-static void	ft_fill_string(char *s, int n)
+static void	ft_fill_string(char *s, int n, int len)
 {
-	int	len;
-
 	if (n == 0)
 	{
 		s[0] = '0';
@@ -48,7 +46,6 @@ static void	ft_fill_string(char *s, int n)
 		else
 			n = -n;
 	}
-	len = ft_intlen(n);
 	while (n)
 	{
 		s[--len] = (n % 10) + '0';
@@ -66,6 +63,6 @@ char	*ft_itoa(int n)
 	if (!s)
 		return (0);
 	s[len] = '\0';
-	ft_fill_string(s, n);
+	ft_fill_string(s, n, len);
 	return (s);
 }
