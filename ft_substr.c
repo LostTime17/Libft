@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 14:09:56 by root              #+#    #+#             */
-/*   Updated: 2023/08/30 18:43:02 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 16:56:24 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	char *sub_s;
-	size_t i;
+	char	*sub_s;
+	size_t	i;
 
 	if (start >= ft_strlen(s))
 	{

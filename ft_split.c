@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 16:40:35 by root              #+#    #+#             */
-/*   Updated: 2023/08/30 18:43:14 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 16:54:48 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,21 @@ static int	ft_count_words(const char *s, char c)
 	return (count);
 }
 
+static int	word_len(const char *s, char c)
+{
+	int	len;
+
+	len = 0;
+	while (s[len] && s[len] != c)
+		len++;
+	return (len);
+}
+
+static char	*allocate_word(const char *s, char c)
+{
+	return (malloc(word_len(s, c) + 1));
+}
+
 static char	**ft_free_mem(char **result, int last_i)
 {
 	while (last_i >= 0)
@@ -39,10 +54,10 @@ static char	**ft_free_mem(char **result, int last_i)
 
 char	**ft_split(const char *s, char c)
 {
-	char **result;
-	int words;
-	int len;
-	int i;
+	char	**result;
+	int		words;
+	int		len;
+	int		i;
 
 	words = ft_count_words(s, c);
 	result = malloc(sizeof(char *) * (words + 1));
@@ -53,10 +68,8 @@ char	**ft_split(const char *s, char c)
 	{
 		while (*s == c)
 			s++;
-		len = 0;
-		while (s[len] && s[len] != c)
-			len++;
-		result[i] = malloc(len + 1);
+		len = word_len(s, c);
+		result[i] = allocate_word(s, c);
 		if (!result[i])
 			return (ft_free_mem(result, i - 1));
 		ft_strlcpy(result[i], s, len + 1);

@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 19:05:38 by root              #+#    #+#             */
-/*   Updated: 2023/08/30 18:43:09 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 16:55:35 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	size_t len;
+	size_t	len;
 
 	len = 0;
 	while (src[len] && len < size - 1)

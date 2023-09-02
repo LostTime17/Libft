@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 20:18:11 by root              #+#    #+#             */
-/*   Updated: 2023/08/30 18:43:04 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 16:56:04 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	const char *last;
+	const char	*last;
 
 	last = 0;
 	while (*s)

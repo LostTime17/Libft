@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 14:38:22 by root              #+#    #+#             */
-/*   Updated: 2023/08/30 18:43:03 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 16:56:17 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strtrim(const char *s1, const char *set)
 {
-	const char *start;
-	const char *end;
-	char *trimmed;
-	size_t len;
+	const char	*start;
+	const char	*end;
+	char		*trimmed;
+	size_t		len;
 
 	while (*s1 && ft_strchr(set, *s1))
 		s1++;

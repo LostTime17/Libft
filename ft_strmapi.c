@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 19:01:01 by root              #+#    #+#             */
-/*   Updated: 2023/08/30 18:43:07 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 16:55:48 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-	char *new_s;
-	size_t len;
-	size_t i;
+	char	*new_s;
+	size_t	len;
+	size_t	i;
 
 	if (!s || !f)
 		return (0);

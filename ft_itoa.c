@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 17:25:53 by root              #+#    #+#             */
-/*   Updated: 2023/09/01 23:24:42 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 15:37:09 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,8 @@ static void	ft_fill_string(char *s, int n, int len)
 
 char	*ft_itoa(int n)
 {
-	char *s;
-	int len;
+	char	*s;
+	int		len;
 
 	len = ft_intlen(n);
 	s = malloc(len + 1);

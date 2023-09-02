@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 22:08:58 by root              #+#    #+#             */
-/*   Updated: 2023/08/30 18:43:36 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 15:31:46 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	void *ptr;
-	unsigned char *byte_ptr;
-	size_t total_bytes;
+	void			*ptr;
+	unsigned char	*byte_ptr;
+	size_t			total_bytes;
 
 	ptr = malloc(nmemb * size);
 	if (!ptr)

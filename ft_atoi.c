@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 17:16:46 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 01:35:27 by root             ###   ########.fr       */
+/*   Updated: 2023/09/02 15:31:11 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@ static int	check_overflow(long result, int sign, char current)
 
 int	ft_atoi(const char *str)
 {
-	long result;
-	int sign;
-	int overflow_result;
+	long	result;
+	int		sign;
+	int		overflow_result;
 
 	result = 0;
 	sign = 1;
