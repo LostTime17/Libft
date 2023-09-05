@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 13:30:54 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:55:04 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 16:37:55 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Dupplicate the given string 's' by create, allocate mem, copy to new string
 char	*ft_strdup(const char *s)
 {
 	char	*dup_s;

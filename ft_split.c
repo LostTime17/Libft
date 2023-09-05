@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 16:40:35 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:54:48 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 16:35:41 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Count the total words separated by 'c' in the string 's'
 static int	ft_count_words(const char *s, char c)
 {
 	int	count;
@@ -29,6 +30,7 @@ static int	ft_count_words(const char *s, char c)
 	return (count);
 }
 
+// Determine the length of a word up to character 'c' or end of string
 static int	word_len(const char *s, char c)
 {
 	int	len;
@@ -39,11 +41,13 @@ static int	word_len(const char *s, char c)
 	return (len);
 }
 
+// Allocate memory space for a word in the string 's' up to character 'c'
 static char	*allocate_word(const char *s, char c)
 {
 	return (malloc(word_len(s, c) + 1));
 }
 
+// Free the memory allocated in case of failure
 static char	**ft_free_mem(char **result, int last_i)
 {
 	while (last_i >= 0)
@@ -52,6 +56,7 @@ static char	**ft_free_mem(char **result, int last_i)
 	return (0);
 }
 
+// Split the string 's' by character 'c' and return an array of words
 char	**ft_split(const char *s, char c)
 {
 	char	**result;

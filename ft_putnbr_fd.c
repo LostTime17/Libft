@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/29 22:10:43 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:18:13 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 15:31:08 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Writes the integer 'n' as a string to the given file descriptor 'fd'
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == INT_MIN)

@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 17:01:49 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 15:37:28 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 12:51:57 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Delete the provided list node's content and free the node
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (!lst || !del)

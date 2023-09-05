@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 20:10:50 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:54:54 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 16:36:55 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Locate the first occurrence of character 'c' in the string 's'
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s)

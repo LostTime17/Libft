@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 14:38:22 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:56:17 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 18:20:29 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Returns a new string that is a string 's1' trimmed version
 char	*ft_strtrim(const char *s1, const char *set)
 {
 	const char	*start;

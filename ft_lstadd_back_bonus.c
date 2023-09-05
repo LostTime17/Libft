@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 17:00:50 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 15:37:15 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 12:42:25 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Append a new node to the end of the linked list
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*current;

@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 19:26:02 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:55:28 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 16:43:00 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Appends 'src' to 'dest', but never writes more than 'size' bytes to 'dest'
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	dest_len;

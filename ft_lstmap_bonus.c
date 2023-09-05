@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 17:02:30 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:16:50 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 15:15:18 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Create a new node, clear the new list if node creation fails
 static t_list	*create_node(void *content, t_list **new, void (*del)(void *))
 {
 	t_list	*node;
@@ -22,6 +23,7 @@ static t_list	*create_node(void *content, t_list **new, void (*del)(void *))
 	return (node);
 }
 
+// Add a node to the new list, adjust the temp pointer as needed
 static void	add_to_new_list(t_list **new, t_list **temp, t_list *node)
 {
 	if (!*new)
@@ -36,6 +38,7 @@ static void	add_to_new_list(t_list **new, t_list **temp, t_list *node)
 	}
 }
 
+// Map the list 'lst' using function 'f', and return new list
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new;

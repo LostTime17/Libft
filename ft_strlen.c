@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 21:45:56 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:55:41 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 17:08:12 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Returns the length of the string 's', excluding the null-terminating
 size_t	ft_strlen(const char *s)
 {
 	size_t	len;

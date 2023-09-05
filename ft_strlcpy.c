@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 19:05:38 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:55:35 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 17:07:01 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Copies up to 'size' - 1 characters from 'src' to 'dest', null-terminating
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	len;

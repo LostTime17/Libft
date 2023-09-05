@@ -6,24 +6,29 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 16:56:40 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:59:06 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 18:27:53 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// Header protection
 #ifndef LIBFT_H
 # define LIBFT_H
+
+// Include library for functions
 # include <ctype.h>
 # include <limits.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
 
+// Linked list data structure
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
 
+// Functions declaration
 t_list	*ft_lstnew(void *content);
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));

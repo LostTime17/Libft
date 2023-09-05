@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 22:54:23 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:17:56 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 15:24:31 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Mostly like ft_memcpy but safely, handle the overlapping
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*p_dest;

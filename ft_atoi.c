@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 17:16:46 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 15:31:11 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 12:26:35 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Checks for int overflow during conversion
 static int	check_overflow(long result, int sign, char current)
 {
 	if (result > INT_MAX / 10)
@@ -31,6 +32,7 @@ static int	check_overflow(long result, int sign, char current)
 	return (0);
 }
 
+// Converts string to integer, managing whitespaces and signs
 int	ft_atoi(const char *str)
 {
 	long	result;

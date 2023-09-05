@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 22:44:08 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:17:47 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 15:22:33 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Copy 'n' bytes from 'src' to 'dest', and return the 'dest' pointer
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char		*p_dest;

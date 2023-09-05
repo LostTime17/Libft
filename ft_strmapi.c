@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 19:01:01 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:55:48 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 17:10:50 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Creates a new string by applying the function 'f' to each character
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	char	*new_s;

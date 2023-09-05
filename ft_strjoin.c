@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 14:23:27 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:55:20 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 16:41:21 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Creates a new string by concatenating 's1' and 's2'
 char	*ft_strjoin(const char *s1, const char *s2)
 {
 	char	*new_s;

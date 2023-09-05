@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 16:06:45 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:17:39 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 15:21:45 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Compare the first 'n' bytes of 's1' and 's2', return the first difference
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*ptr1;

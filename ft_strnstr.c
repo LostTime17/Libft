@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 16:25:26 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:55:58 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 17:13:17 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Searches for the substring 'needle' in the 'haystack' at 'len' bytes
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	needle_len;

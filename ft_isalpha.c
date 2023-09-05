@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 16:59:49 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 17:08:48 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 12:33:19 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Checks if the given character is an alphabet (A-Z, a-z)
 int	ft_isalpha(int c)
 {
 	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));

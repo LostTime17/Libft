@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 14:09:56 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:56:24 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 18:22:21 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Extracts a substring from 's', begin at 'start' until 'len' or end of string
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	char	*sub_s;

@@ -6,12 +6,13 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 20:36:39 by root              #+#    #+#             */
-/*   Updated: 2023/09/02 16:17:32 by root             ###   ########.fr       */
+/*   Updated: 2023/09/05 15:20:11 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// Search and return first occurrence 'c' in the first 'n' bytes of 's'
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*ptr;
