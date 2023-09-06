@@ -1,5 +1,5 @@
 NAME = libft.a
-CC = gcc
+CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 SRC_FILES = $(filter-out $(wildcard ft_lst*_bonus.c), $(wildcard ft_*.c))
