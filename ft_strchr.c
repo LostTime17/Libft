@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 20:10:50 by root              #+#    #+#             */
-/*   Updated: 2023/09/05 16:36:55 by root             ###   ########.fr       */
+/*   Updated: 2023/09/08 20:02:59 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,30 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
+
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char	str[] = "Hello world!";
+	char	*result;
+
+	result = ft_strchr(str, 'w');
+	if (result)
+		printf ("Found 'w' at position: %ld\n", result - str);
+	else
+		printf ("Character 'w' not found.\n");
+	result = ft_strchr(str, '!');
+	if (result)
+		printf ("Found '!' at position: %ld\n", result - str);
+	else
+		printf ("Character '!' not found.\n");
+	result = ft_strchr(str, '\0');
+	if (result)
+		printf ("Found '\\0' at position: %ld\n", result - str);
+	else
+		printf ("Character '\\0' not found.\n");
+	return (0);
+}
+*/

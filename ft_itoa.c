@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 17:25:53 by root              #+#    #+#             */
-/*   Updated: 2023/09/05 12:39:04 by root             ###   ########.fr       */
+/*   Updated: 2023/09/08 17:14:32 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,3 +69,22 @@ char	*ft_itoa(int n)
 	ft_fill_string(s, n, len);
 	return (s);
 }
+
+/*
+#include <stdio.h>
+#include <limits.h>
+
+int	main(void)
+{
+	int	num1 = 425;
+	int	num2 = -425;
+	int	zero = 0;
+	int	int_min = INT_MIN;
+
+	printf ("itoa(%d) = %s\n", num1, ft_itoa(num1));
+	printf ("itoa(%d) = %s\n", num2, ft_itoa(num2));
+	printf ("itoa(%d) = %s\n", zero, ft_itoa(zero));
+	printf ("itoa(%d) = %s\n", int_min, ft_itoa(int_min));
+	return (0);
+}
+*/

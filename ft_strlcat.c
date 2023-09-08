@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 19:26:02 by root              #+#    #+#             */
-/*   Updated: 2023/09/05 16:43:00 by root             ###   ########.fr       */
+/*   Updated: 2023/09/08 20:19:20 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,19 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[dest_len + i] = '\0';
 	return (dest_len + src_len);
 }
+
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char		dest[50] = "Hello ";
+	const char	*src = "world!";
+	size_t		result;
+
+	result = ft_strlcat(dest, src, sizeof(dest));
+	printf ("Result string: %s\n", dest);
+	printf ("Total length tried to create: %zu\n", result);
+	return (0);
+}
+*/

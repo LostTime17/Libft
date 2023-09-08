@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 16:40:35 by root              #+#    #+#             */
-/*   Updated: 2023/09/05 16:35:41 by root             ###   ########.fr       */
+/*   Updated: 2023/09/08 19:56:48 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,3 +84,30 @@ char	**ft_split(const char *s, char c)
 	result[i] = NULL;
 	return (result);
 }
+
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char	**result;
+	char	str[] = "Hello from the other side";
+	int		i;
+
+	result = ft_split(str, ' ');
+	if (!result)
+	{
+		printf ("Memory allocation failed!\n");
+		return (1);
+	}
+	i = 0;
+	while (result[i])
+	{
+		printf ("%s\n", result[i]);
+		free (result[i]);
+		i++;
+	}
+	free (result);
+	return (0);
+}
+*/

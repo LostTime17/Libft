@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 13:30:54 by root              #+#    #+#             */
-/*   Updated: 2023/09/05 16:37:55 by root             ###   ########.fr       */
+/*   Updated: 2023/09/08 20:07:43 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,24 @@ char	*ft_strdup(const char *s)
 	*dup_s = '\0';
 	return (start);
 }
+
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char	str1[] = "Hello world!";
+	char	*dup_str;
+
+	dup_str = ft_strdup(str1);
+	if (dup_str)
+	{
+		printf ("String: %s\n", str1);
+		printf ("Duplicate: %s\n", dup_str);
+		free (dup_str);
+	}
+	else
+		printf ("Failed to duplicate the string.\n");
+	return (0);
+}
+*/

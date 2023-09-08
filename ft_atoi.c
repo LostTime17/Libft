@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 17:16:46 by root              #+#    #+#             */
-/*   Updated: 2023/09/05 12:26:35 by root             ###   ########.fr       */
+/*   Updated: 2023/09/08 16:13:28 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,3 +59,21 @@ int	ft_atoi(const char *str)
 	}
 	return ((int)(result * sign));
 }
+
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char	*test1 = "    -42";
+	char	*test2 = "2548abcd";
+	char	*test3 = "Hello world 2451";
+	char	*test4 = "-634624";
+
+	printf ("%d\n", ft_atoi(test1));
+	printf ("%d\n", ft_atoi(test2));
+	printf ("%d\n", ft_atoi(test3));
+	printf ("%d\n", ft_atoi(test4));
+	return (0);
+}
+*/

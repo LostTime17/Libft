@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 17:01:35 by root              #+#    #+#             */
-/*   Updated: 2023/09/05 12:50:28 by root             ###   ########.fr       */
+/*   Updated: 2023/09/08 17:31:19 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,18 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		*lst = temp;
 	}
 }
+
+/*
+This code is just for example case of del functions pointer
+
+void	del_content(void *content)
+{
+	free (content);
+}
+
+int	main(void)
+{
+	ft_lstclear(&test_list, del_content);
+	return (0);
+}
+*/

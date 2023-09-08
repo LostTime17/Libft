@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/25 19:05:38 by root              #+#    #+#             */
-/*   Updated: 2023/09/05 17:07:01 by root             ###   ########.fr       */
+/*   Updated: 2023/09/08 20:22:17 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,19 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		len++;
 	return (len);
 }
+
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char		dest[10];
+	const char	*src = "Hello world!";
+	size_t		result;
+
+	result = ft_strlcpy(dest, src, sizeof(dest));
+	printf ("Destination: %s\n", dest);
+	printf ("Total length of source: %zu\n", result);
+	return (0);
+}
+*/
