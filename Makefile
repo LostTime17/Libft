@@ -2,9 +2,9 @@ NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRC_FILES = $(filter-out $(wildcard ft_lst*_bonus.c), $(wildcard ft_*.c))
+SRC_FILES = $(filter-out $(wildcard ft_lst*.c), $(wildcard ft_*.c))
 OBJS = $(SRC_FILES:.c=.o)
-BONUS_FILES = $(wildcard ft_lst*_bonus.c)
+BONUS_FILES = $(wildcard ft_lst*.c)
 BONUS_OBJ = $(BONUS_FILES:.c=.o)
 
 all: $(NAME)

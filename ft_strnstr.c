@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 16:25:26 by root              #+#    #+#             */
-/*   Updated: 2023/09/08 20:47:19 by root             ###   ########.fr       */
+/*   Updated: 2023/09/09 12:56:56 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,13 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	needle_len;
 	size_t	i;
 
+	if (len == 0)
+		return (NULL);
 	if (!*needle)
 		return ((char *)haystack);
 	needle_len = ft_strlen(needle);
 	i = 0;
-	while (i <= (len - needle_len) && haystack[i])
+	while (haystack[i] && i + needle_len <= len)
 	{
 		if (haystack[i] == *needle)
 		{
