@@ -6,19 +6,18 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 16:25:26 by root              #+#    #+#             */
-/*   Updated: 2023/09/09 12:56:56 by root             ###   ########.fr       */
+/*   Updated: 2023/09/22 01:42:06 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Searches for the substring 'needle' in the 'haystack' at 'len' bytes
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	needle_len;
 	size_t	i;
 
-	if (len == 0)
+	if (!haystack || !needle)
 		return (NULL);
 	if (!*needle)
 		return ((char *)haystack);
@@ -35,28 +34,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*hst = "Hello world!";
-	char	*needle;
-	char	*result;
-
-	needle = "world";
-	result = ft_strnstr(hst, needle, ft_strlen(hst));
-	if (result)
-		printf ("Found '%s' in '%s' at: %ld\n", needle, hst, result - hst);
-	else
-		printf ("Did not find '%s' in '%s'\n", needle, hst);
-	needle = "apple";
-	result = ft_strnstr(hst, needle, ft_strlen(hst));
-	if (result)
-		printf ("Found '%s' in '%s' at: %ld\n", needle, hst, result - hst);
-	else
-		printf ("Did not find '%s' in '%s'\n", needle, hst);
-	return (0);
-}
-*/

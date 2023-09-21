@@ -6,11 +6,45 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 16:40:35 by root              #+#    #+#             */
-/*   Updated: 2023/09/08 19:56:48 by root             ###   ########.fr       */
+/*   Updated: 2023/09/22 01:57:38 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	ft_count_words(const char *s, char c);
+static int	word_len(const char *s, char c);
+static char	*allocate_word(const char *s, char c);
+static char	**ft_free_mem(char **result, int last_i);
+
+// Split the string 's' by character 'c' and return an array of words
+char	**ft_split(const char *s, char c)
+{
+	char	**result;
+	int		words;
+	int		len;
+	int		i;
+
+	words = ft_count_words(s, c);
+	result = malloc(sizeof(char *) * (words + 1));
+	if (!result)
+		return (0);
+	i = 0;
+	while (i < words)
+	{
+		while (*s == c)
+			s++;
+		len = word_len(s, c);
+		result[i] = allocate_word(s, c);
+		if (!result[i])
+			return (ft_free_mem(result, i - 1));
+		ft_strlcpy(result[i], s, len + 1);
+		s += len;
+		i++;
+	}
+	result[i] = NULL;
+	return (result);
+}
 
 // Count the total words separated by 'c' in the string 's'
 static int	ft_count_words(const char *s, char c)
@@ -55,59 +89,3 @@ static char	**ft_free_mem(char **result, int last_i)
 	free(result);
 	return (0);
 }
-
-// Split the string 's' by character 'c' and return an array of words
-char	**ft_split(const char *s, char c)
-{
-	char	**result;
-	int		words;
-	int		len;
-	int		i;
-
-	words = ft_count_words(s, c);
-	result = malloc(sizeof(char *) * (words + 1));
-	if (!result)
-		return (0);
-	i = 0;
-	while (i < words)
-	{
-		while (*s == c)
-			s++;
-		len = word_len(s, c);
-		result[i] = allocate_word(s, c);
-		if (!result[i])
-			return (ft_free_mem(result, i - 1));
-		ft_strlcpy(result[i], s, len + 1);
-		s += len;
-		i++;
-	}
-	result[i] = NULL;
-	return (result);
-}
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	**result;
-	char	str[] = "Hello from the other side";
-	int		i;
-
-	result = ft_split(str, ' ');
-	if (!result)
-	{
-		printf ("Memory allocation failed!\n");
-		return (1);
-	}
-	i = 0;
-	while (result[i])
-	{
-		printf ("%s\n", result[i]);
-		free (result[i]);
-		i++;
-	}
-	free (result);
-	return (0);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 19:01:01 by root              #+#    #+#             */
-/*   Updated: 2023/09/08 20:30:44 by root             ###   ########.fr       */
+/*   Updated: 2023/09/22 01:59:18 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,27 +34,3 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	new_s[len] = '\0';
 	return (new_s);
 }
-
-/*
-#include <stdio.h>
-
-char	plus_index(unsigned int i, char c)
-{
-	return (c + i);
-}
-
-int	main(void)
-{
-	const char	*src = "hello world!";
-	char		*result;
-
-	result = ft_strmapi(src, plus_index);
-	if (result)
-	{
-		printf ("String: %s\n", src);
-		printf ("Plus string: %s\n", result);
-		free (result);
-	}
-	return (0);
-}
-*/

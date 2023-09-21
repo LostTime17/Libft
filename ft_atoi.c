@@ -6,38 +6,17 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 17:16:46 by root              #+#    #+#             */
-/*   Updated: 2023/09/08 16:13:28 by root             ###   ########.fr       */
+/*   Updated: 2023/09/22 01:42:01 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// Checks for int overflow during conversion
-static int	check_overflow(long result, int sign, char current)
-{
-	if (result > INT_MAX / 10)
-	{
-		if (sign == 1)
-			return (INT_MAX);
-		else
-			return (INT_MIN);
-	}
-	else if (result == INT_MAX / 10 && current - '0' > INT_MAX % 10)
-	{
-		if (sign == 1)
-			return (INT_MAX);
-		else
-			return (INT_MIN);
-	}
-	return (0);
-}
 
 // Converts string to integer, managing whitespaces and signs
 int	ft_atoi(const char *str)
 {
 	long	result;
 	int		sign;
-	int		overflow_result;
 
 	result = 0;
 	sign = 1;
@@ -51,29 +30,8 @@ int	ft_atoi(const char *str)
 	}
 	while (*str >= '0' && *str <= '9')
 	{
-		overflow_result = check_overflow(result, sign, *str);
-		if (overflow_result != 0)
-			return (overflow_result);
 		result = result * 10 + (*str - '0');
 		str++;
 	}
 	return ((int)(result * sign));
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*test1 = "    -42";
-	char	*test2 = "2548abcd";
-	char	*test3 = "Hello world 2451";
-	char	*test4 = "-634624";
-
-	printf ("%d\n", ft_atoi(test1));
-	printf ("%d\n", ft_atoi(test2));
-	printf ("%d\n", ft_atoi(test3));
-	printf ("%d\n", ft_atoi(test4));
-	return (0);
-}
-*/

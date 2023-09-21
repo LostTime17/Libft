@@ -6,11 +6,12 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 22:08:58 by root              #+#    #+#             */
-/*   Updated: 2023/09/08 16:27:38 by root             ###   ########.fr       */
+/*   Updated: 2023/09/22 01:50:13 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 // Malloc and zeroes memory for an array of 'nmemb' elements, each 'size' bytes
 void	*ft_calloc(size_t nmemb, size_t size)
@@ -29,27 +30,24 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	return (ptr);
 }
 
-/*
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+// int	main(void)
+// {
+// 	int	*arr;
+// 	int	i;
 
-int	main(void)
-{
-	int	*arr1;
-	int	*arr2;
-	size_t	nmemb = 5;
-	size_t	size = sizeof(int);
-
-	arr1 = (int *)ft_calloc(nmemb, size);
-	arr2 = (int *)calloc(nmemb, size);
-
-	if (memcmp(arr1, arr2, nmemb * size) == 0)
-		printf ("Pass!\n");
-	else
-		printf ("Error!\n");
-	free (arr1);
-	free (arr2);
-	return (0);
-}
-*/
+// 	arr = (int *)ft_calloc(5, sizeof(int));
+// 	if (!arr)
+// 	{
+// 		printf ("Error\n");
+// 		return (1);
+// 	}
+// 	i = 0;
+// 	while (i < 5)
+// 	{
+// 		printf ("%d ", arr[i]);
+// 		i++;
+// 	}
+// 	printf ("\n");
+// 	free(arr);
+// 	return (0);
+// }
