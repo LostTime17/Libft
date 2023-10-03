@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 14:23:27 by root              #+#    #+#             */
-/*   Updated: 2023/09/08 20:16:27 by root             ###   ########.fr       */
+/*   Updated: 2023/09/22 01:58:51 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,24 +31,3 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	*new_s = '\0';
 	return (start);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	const char *str1 = "Hello ";
-	const char *str2 = "world!";
-	char		*result;
-
-	result = ft_strjoin(str1, str2);
-	if (result)
-	{
-		printf ("Strjoin: %s\n", result);
-		free (result);
-	}
-	else
-		printf ("Memory allocation failed.\n");
-	return (0);
-}
-*/

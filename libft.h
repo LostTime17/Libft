@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/02 16:56:40 by root              #+#    #+#             */
-/*   Updated: 2023/09/05 18:27:53 by root             ###   ########.fr       */
+/*   Updated: 2023/09/22 02:08:38 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <ctype.h>
 # include <limits.h>
 # include <stdlib.h>
-# include <string.h>
 # include <unistd.h>
 
 // Linked list data structure

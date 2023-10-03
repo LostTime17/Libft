@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: chchartp <chchartp@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 14:38:22 by root              #+#    #+#             */
-/*   Updated: 2023/09/08 20:59:00 by root             ###   ########.fr       */
+/*   Updated: 2023/10/03 15:17:14 by chchartp         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,25 +33,3 @@ char	*ft_strtrim(const char *s1, const char *set)
 	ft_strlcpy(trimmed, start, len + 1);
 	return (trimmed);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str[] = "@@@@Hello world!@@@";
-	char	set[] = "@";
-	char	*result;
-
-	result = ft_strtrim(str, set);
-	if (result)
-	{
-		printf ("String: \"%s\"\n", str);
-		printf ("Trimmed: \"%s\"\n", result);
-		free (result);
-	}
-	else
-		printf ("Memory allocation failed.\n");
-	return (0);
-}
-*/

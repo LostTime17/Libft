@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/27 16:06:45 by root              #+#    #+#             */
-/*   Updated: 2023/09/08 18:22:40 by root             ###   ########.fr       */
+/*   Updated: 2023/09/22 01:54:08 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,23 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str1[] = "Hello world!";
-	char	str2[] = "Hello wordx!";
-	char	str3[] = "Hello!";
-	int		result;
-
-	result = ft_memcmp(str1, str2, sizeof(str1));
-	printf ("Cmp result between \"%s\" and \"%s\": %d\n", str1, str2, result);
-	result = ft_memcmp(str1, str1, sizeof(str1));
-	printf ("Cmp result between \"%s\" and \"%s\": %d\n", str1, str1, result);
-	result = ft_memcmp(str1, str3, sizeof(str3));
-	printf ("Cmp result between \"%s\" and \"%s\": %d\n", str1, str3, result);
-	return (0);
-}
-*/
