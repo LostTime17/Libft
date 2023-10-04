@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 22:44:08 by root              #+#    #+#             */
-/*   Updated: 2023/09/22 01:54:13 by root             ###   ########.fr       */
+/*   Updated: 2023/10/04 12:18:57 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const unsigned char	*p_src;
 
 	if (!dest || !src)
-		return (NULL);
+		return (dest);
 	p_dest = (unsigned char *)dest;
 	p_src = (const unsigned char *)src;
 	while (n--)
